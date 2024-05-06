@@ -3,18 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Weather Report</title>
 </head>
 <body>
     <div class="mainContainer">
-        <dialog id="weatherDialog">
-            <form id="weatherForm">
-    
-    
-            </form>
-        </dialog>
+        <div class="searchDiv">
+            <input type="search" name="search" id="search" placeholder="Input your location here...">
+            <button id="celcius"><sup>o</sup><strong>C</strong></button>
+            <button id="fahrenheiht"><sup>o</sup><strong>F</strong></button>
+        </div>
+        <div class="contentDiv">
+            <div id="currentData">
+                <div id="currentDataHeader">
+                    <h1 class="currentDataHeaderTitle"></h1>
+                    <div class="currentDataHeaderTimeUpdate">
+                        <h2 class="currentDataHeaderTime"></h1>
+                        <h2 class="currentDataHeaderUpdate"></h1>
+                    </div>
+                </div>
+                <div id="currentDataDateLocationCountry">
+                    <h2 class="currentDataDate"></h2>
+                    <h2 class="currentDataLocation"></h2>
+                    <h2 class="currentDataCountry"></h2>
+                </div>
+                <div id="currentDataTempCondition">
+                    <div class="currentDataTemp">
+                        <h2 class="currentTemp"></h2>
+                        <h3 class="currentFeeling"></h3>
+                    </div>
+                    <img src="" alt="" id="currentDataIcon">
+                </div>
+                <div id="currentDataMetrics">
+                    <div class="currentDataWindSpeed">
+                        <h3 class="speed"></h3>
+                        <h3 class="speedText"></h3>
+                    </div>
+                    <div class="currentDataHumidity">
+                        <h3 class="percent"></h3>
+                        <h3 class="percentText"></h3>
+                    </div>
+                    <div class="currentDataUV">
+                        <h3 class="uv"></h3>
+                        <h3 class="uvText"></h3>
+                    </div>
+                    <div class="currentDataVisibility">
+                        <h3 class="visibility"></h3>
+                        <h3 class="visibilityText"></h3>
+                    </div>
+                </div>
+            </div>
+            <div id="forecastedData">
+                <div class="dailyForecast"></div>
+                <div class="hourlyForecast">
+                    <div class="hourlyHeader">
+                        <h1 class="hourlyTitle"></h1>
+                        <h1 class="date"></h1>
+                    </div>
+                    <table class="hourlyData">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <figure>
+                <figcaption>POWERED BY</figcaption>
+                <a target="_blank" href="https://www.weatherapi.com/" title="Free Weather API"><img src='https://cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0"></a>
+            </figure>
+        </footer>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

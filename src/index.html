@@ -17,8 +17,8 @@
                 <div id="currentDataHeader">
                     <h1 class="currentDataHeaderTitle"></h1>
                     <div class="currentDataHeaderTimeUpdate">
-                        <h2 class="currentDataHeaderTime"></h1>
                         <h2 class="currentDataHeaderUpdate"></h1>
+                        <h2 class="currentDataHeaderTime"></h1>
                     </div>
                 </div>
                 <div id="currentDataDateLocationCountry">
@@ -28,10 +28,12 @@
                 </div>
                 <div id="currentDataTempCondition">
                     <div class="currentDataTemp">
-                        <h2 class="currentTemp"></h2>
+                        <h1 class="currentTemp">
+                        </h1>
                         <h3 class="currentFeeling"></h3>
                     </div>
                     <img src="" alt="" id="currentDataIcon">
+                    <h3 class="currentCondition"></h3>
                 </div>
                 <div id="currentDataMetrics">
                     <div class="currentDataWindSpeed">
@@ -53,7 +55,22 @@
                 </div>
             </div>
             <div id="forecastedData">
-                <div class="dailyForecast"></div>
+                <div class="dailyForecast">
+                    <h1 class="dailyForecastTitle">Daily Forecast</h1>
+                    <div class="dailyForecastContent">
+                        <i class="fa-solid fa-backward"></i>
+                        <div class="forecast">
+                            <h2 class="forecastDayAndDate"></h2>
+                            <img src="" alt="" class="dailyIcon">
+                            <div class="dailyTemps">
+                                <h2 class="high"></h2>
+                                <h2 class="low"></h2>
+                            </div>
+                            
+                        </div>
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                </div>
                 <div class="hourlyForecast">
                     <div class="hourlyHeader">
                         <h1 class="hourlyTitle"></h1>
@@ -71,5 +88,6 @@
             </figure>
         </footer>
     </div>
+    <script src="https://kit.fontawesome.com/f4523bed7d.js" crossorigin="anonymous"></script>
 </body>
 </html>

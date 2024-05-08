@@ -60,11 +60,29 @@ button:focus {
     width: 100%;
 }
 
-#currentData {
+.gifAndData {
     grid-row: 1 / 2;
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gif {
+    display: grid;
+    box-shadow: 3px 3px 6px black;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border-style: none;
+    width: 400px;
+    height: 500px;
+}
+
+#currentData {
     display: grid;
     grid-template: 100px 150px repeat(2, 1fr) / 1fr;
-    margin: 0 auto;
     width: 750px;
     height: 500px;
     border-style: none;
@@ -73,6 +91,7 @@ button:focus {
     background-color: white;
     color: black;
 }
+
 
 #currentDataHeader {
     grid-row: 1 / 2;

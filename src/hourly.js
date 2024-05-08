@@ -1,53 +1,115 @@
-// const hourlyForecast = document.querySelector('.hourlyForecast');
-// const hourlyTitle = document.querySelector('.hourlyTitle');
-// const hourlyMetrics = document.querySelector('.hourlyMetrics');
-// const hourlyData = document.querySelector('.hourlyData');
-// const search = document.querySelector('#search');
-// const celcius = document.querySelector('#celcius');
-// const fahrenheiht = document.querySelector('#fahrenheiht');
-// let city;
+import getWeather from "./api";
 
-// search.addEventListener('change', () => {
-//     city = search.value;
-//     search.value = '';
-// })
+function loadHourlyCelciusData(day){
+    const hourlyData = document.querySelector('.hourlyData');
+    const hourlyTitle = document.querySelector('.hourlyTitle');
+    const header = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    hourlyTitle.textContent = "Hourly Forecast";
+    hourlyForecast.style.display = "grid";
 
-// celcius.addEventListener('click', () => {
-//     const data = getWeather(city);
-//     data.then(resolve => {
-//         console.log(resolve);
-//     })
-//     city = '';
-// })
+    const headerData = ['Time', 'Icon', 'Condition', 'Temp (Celcius)', 'Precipitation (mm)', 'Wind Speed (kph)', 'Humidity', 'Feels Like'];
+    headerData.forEach(text => {
+        const data = document.createElement('th');
+        data.textContent = text;
+        headerRow.appendChild(data);
+    })
 
-// async function getCelciusData(){
-//     const data = await getWeather(city);
-//     celcius.addEventListener('click', () => {
-//         data.then(resolvedData => {
+    header.appendChild(headerRow);
+    hourlyData.appendChild(header);
 
-//             hourlyTitle.textContent = "Hourly Forecast";
+    const jsonData = getWeather(city);
+    jsonData.then(resolvedData => {
+        const days = resolvedData.forecast.forecastday;
+        days[day].hour.forEach(hour => {
+            const icon = document.createElement('img');
+            icon.src = 'https:'+hour.condition.icon;
+            const row = document.createElement('tr');
+            const rowData1 = document.createElement('td');
+            const rowData2 = document.createElement('td');
+            const rowData3 = document.createElement('td');
+            const rowData4 = document.createElement('td');
+            const rowData5 = document.createElement('td');
+            const rowData6 = document.createElement('td');
+            const rowData7 = document.createElement('td');
+            const rowData8 = document.createElement('td');
+            rowData1.textContent = hour.time.split(' ')[1];
+            rowData2.appendChild(icon);
+            rowData3.textContent = hour.condition.text;
+            rowData4.textContent = hour.temp_c;
+            rowData5.textContent = hour.precip_mm;
+            rowData6.textContent = hour.wind_kph;
+            rowData7.textContent = hour.humidity;
+            rowData8.textContent = hour.feelslike_c;
+        
+            row.appendChild(rowData1);
+            row.appendChild(rowData2);
+            row.appendChild(rowData3);
+            row.appendChild(rowData4);
+            row.appendChild(rowData5);
+            row.appendChild(rowData6);
+            row.appendChild(rowData7);
+            row.appendChild(rowData8);
+        
+            hourlyData.appendChild(row);
+        })
+    })
+}
 
-//             resolvedData.forecast.forecastday.forEach(forecast => {
-//                 console.log(forecast.hour)
-//             })
-//             hourlyForecast.appendChild(hourlyTitle);
-//             hourlyForecast.appendChild(hourlyMetrics);
-//             hourlyForecast.appendChild(hourlyData);
-//         })
-//     })
-// }
+function loadHourlyFahrenheihtData(day){
+    const hourlyData = document.querySelector('.hourlyData');
+    const hourlyTitle = document.querySelector('.hourlyTitle');
+    const header = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    hourlyTitle.textContent = "Hourly Forecast";
+    hourlyForecast.style.display = "grid";
 
-// function getFahrenheitData(){
-//     const data = getWeather(city);
-//     fahrenheihtBtn.addEventListener('click', () => {
+    const headerData = ['Time', 'Icon', 'Condition', 'Temp (Fahrenheiht)', 'Precipitation (mm)', 'Wind Speed (kph)', 'Humidity', 'Feels Like'];
+    headerData.forEach(text => {
+        const data = document.createElement('th');
+        data.textContent = text;
+        headerRow.appendChild(data);
+    })
 
-//     })
-// }
+    header.appendChild(headerRow);
+    hourlyData.appendChild(header);
 
-// async function getWeather(location){
-//     const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fa43114a16544456bb311445240605&q=${location}&days=3`, { mode: "cors" });
-//     const weatherData = await response.json();
-//     return weatherData;
-// }
+    const jsonData = getWeather(city);
+    jsonData.then(resolvedData => {
+        const days = resolvedData.forecast.forecastday;
+        days[day].hour.forEach(hour => {
+            const icon = document.createElement('img');
+            icon.src = 'https:'+hour.condition.icon;
+            const row = document.createElement('tr');
+            const rowData1 = document.createElement('td');
+            const rowData2 = document.createElement('td');
+            const rowData3 = document.createElement('td');
+            const rowData4 = document.createElement('td');
+            const rowData5 = document.createElement('td');
+            const rowData6 = document.createElement('td');
+            const rowData7 = document.createElement('td');
+            const rowData8 = document.createElement('td');
+            rowData1.textContent = hour.time.split(' ')[1];
+            rowData2.appendChild(icon);
+            rowData3.textContent = hour.condition.text;
+            rowData4.textContent = hour.temp_f;
+            rowData5.textContent = hour.precip_mm;
+            rowData6.textContent = hour.wind_kph;
+            rowData7.textContent = hour.humidity;
+            rowData8.textContent = hour.feelslike_f;
+        
+            row.appendChild(rowData1);
+            row.appendChild(rowData2);
+            row.appendChild(rowData3);
+            row.appendChild(rowData4);
+            row.appendChild(rowData5);
+            row.appendChild(rowData6);
+            row.appendChild(rowData7);
+            row.appendChild(rowData8);
+        
+            hourlyData.appendChild(row);
+        })
+    })
+}
 
-// export default { getCelciusData, getFahrenheitData}; 
+export default { loadHourlyCelciusData, loadHourlyFahrenheihtData};

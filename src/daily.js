@@ -4,7 +4,7 @@ const high = document.querySelector('.high');
 const low = document.querySelector('.low');
 
 function getCelciusDay(resolvedData, n = 0){
-    const date = new Date(resolvedData.forecast.forecastday[0].date)
+    const date = new Date(resolvedData.forecast.forecastday[n].date)
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const dateArray = date.toString().split(' ');
     forecastDayAndDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');

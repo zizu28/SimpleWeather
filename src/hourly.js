@@ -46,6 +46,7 @@ function loadHourlyCelciusData(resolvedData, n = 0){
         row.appendChild(rowData6);
         row.appendChild(rowData7);
         row.appendChild(rowData8);
+        row.style = 'text-align: center';
     
         hourlyData.appendChild(row);
     })
@@ -99,6 +100,7 @@ function loadHourlyFahrenheihtData(resolvedData, n = 0){
         row.appendChild(rowData6);
         row.appendChild(rowData7);
         row.appendChild(rowData8);
+        row.style = 'text-align: center';
     
         hourlyData.appendChild(row);
     })

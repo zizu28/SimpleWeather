@@ -19,6 +19,7 @@ previousDay.style = 'cursor: pointer';
 
 let city;
 let daysIndex = 0;
+
 // let n = 0;
 
 search.addEventListener('change', () => {
@@ -28,34 +29,29 @@ search.addEventListener('change', () => {
 })
 
 nextDay.addEventListener('click', () => {
-    const jsonData = getData.getWeather();
-    jsonData.then(resolvedData => {
-        const days = resolvedData.forecast.forecastday;
-        if(daysIndex < days.length - 1){
-            daysIndex++;
-        }
+    const data = getData.getWeather();
+    data.then(resolvedData => {
+        daysIndex = daysData.nextDay(resolvedData, daysIndex);
     })
 })
 
 previousDay.addEventListener('click', () => {
-    if(daysIndex > 0){
-        daysIndex--;
-    }
+    const data = getData.getWeather();
+    data.then(resolvedData => {
+        daysIndex = daysData.previousDay(resolvedData, daysIndex);
+    })
 })
 
 window.onload = onWindowLoad;
 
 function onWindowLoad(){
-    console.log(daysIndex);
-    const gifData = getData.getGif(localStorage.getItem('lastLocation'));
+    const gifData = getData.getGif();
     gifData.then(result => {
-        console.log(result);
         gif.src = result.data[0].images.original.url;
         gif.style = 'width: 400px; height: 500px;'
     })
-    const data = getData.getWeather(localStorage.getItem('lastLocation'));
+    const data = getData.getWeather();
     data.then(resolvedData => {
-        console.log(resolvedData);
         const days = resolvedData.forecast.forecastday;
         const date = new Date(days[daysIndex].date);
         const dateArray = date.toString().split(' ');
@@ -70,13 +66,11 @@ function onWindowLoad(){
 celcius.addEventListener('click', () => {
     const gifData = getData.getGif(city);
     gifData.then(result => {
-        console.log(result);
         gif.src = result.data[0].images.original.url;
         gif.style = 'width: 400px; height: 500px;'
     })
     const data = getData.getWeather(city);
     data.then(resolvedData => {
-        console.log(resolvedData);
         hourlyData.textContent = '';
         const days = resolvedData.forecast.forecastday;
         const date = new Date(days[daysIndex].date);
@@ -87,19 +81,16 @@ celcius.addEventListener('click', () => {
         daily.getCelciusDay(resolvedData, daysIndex);
         hourly.loadHourlyCelciusData(resolvedData, daysIndex);
     })
-    console.log(daysIndex);
 })
 
 fahrenheiht.addEventListener('click', () => {
     const gifData = getData.getGif(city);
     gifData.then(result => {
-        console.log(result);
         gif.src = result.data[0].images.original.url;
         gif.style = 'width: 400px; height: 500px;'
     })
     const data = getData.getWeather(city);
     data.then(resolvedData => {
-        console.log(resolvedData);
         hourlyData.textContent = '';
         const days = resolvedData.forecast.forecastday;
         const date = new Date(days[daysIndex].date);
@@ -110,5 +101,4 @@ fahrenheiht.addEventListener('click', () => {
         daily.getFahrenheihtDay(resolvedData, daysIndex);
         hourly.loadHourlyFahrenheihtData(resolvedData, daysIndex);
     })
-    console.log(daysIndex);
 })

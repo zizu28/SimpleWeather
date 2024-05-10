@@ -1,176 +1,1113 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n    box-sizing: border-box;\n}\n\nbody,\nhtml {\n    position: relative;\n    background-color: gray;\n    color: white;\n}\n\n.mainContainer {\n    display: grid;\n    grid-template: 50px 1fr 75px / 1fr;\n    gap: 20px;\n}\n\n/* Search input and buttons styling */\n.searchDiv {\n    grid-row: 1 / 2;\n    margin: 0 auto;\n}\n\ninput[type=\"search\"],\nbutton {\n    font-family: 'Times New Roman', Times, serif;\n    font-weight: bold;\n    margin-top: 10px;\n}\n\ninput[type=\"search\"] {\n    font-size: 25px;\n    border-style: none;\n}\n\ninput[type=\"search\"]:focus {\n    outline: none;\n}\n\nbutton {\n    font-size: 20px;\n    border-radius: 5px;\n    border-style: none;\n    box-shadow: 1px 1px 3px white;\n}\n\nbutton:focus {\n    background-color: gray;\n}\n\n/* Content styling */\n.contentDiv {\n    grid-row: 2 / 3;\n    display: grid;\n    grid-template: 500px 500px / 1fr;\n    gap: 20px;\n    width: 100%;\n}\n\n.gifAndData {\n    grid-row: 1 / 2;\n    display: flex;\n    flex: 1 1 0;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.gif img {\n    display: grid;\n    box-shadow: 3px 3px 6px black;\n    background-color: white;\n    color: black;\n    border-radius: 20px;\n    border-style: none;\n    width: 400px;\n    height: 500px;\n    object-fit: cover;\n}\n\n#currentData {\n    display: grid;\n    grid-template: 100px 150px repeat(2, 1fr) / 1fr;\n    width: 750px;\n    height: 500px;\n    border-style: none;\n    border-radius: 10px;\n    box-shadow: 3px 3px 6px black;\n    background-color: white;\n    color: black;\n}\n\n\n#currentDataHeader {\n    grid-row: 1 / 2;\n    display: flex;\n    flex: 1 1 0;\n    justify-content: space-between;\n}\n\n#currentDataHeader:first-child,\n#currentDataHeader:last-child {\n    margin: 10px;\n}\n\n#currentDataDateLocationCountry {\n    grid-row: 2 / 3;\n}\n\n.currentDataDate,\n.currentDataLocation,\n.currentDataCountry,\n.currentTemp,\n.currentFeeling,\n.dailyForecastTitle {\n    margin-left: 10px;\n}\n\n#currentDataTempCondition {\n    grid-row: 3 / 4;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n#currentDataMetrics {\n    grid-row: 4 / 5;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n#forecastedData {\n    grid-row: 2 / 3;\n    display: flex;\n    flex: 1 1 0;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.dailyForecast,\n.hourlyForecast {\n    display: grid;\n    grid-template: 50px 1fr / 1fr;\n    box-shadow: 3px 3px 6px black;\n    background-color: white;\n    color: black;\n    border-radius: 20px;\n    border-style: none;\n}\n\n.dailyForecast {\n    width: 400px;\n    height: 500px;\n}\n\n.dailyForecastTitle {\n    grid-row: 1 / 2;\n    text-align: center;\n}\n\n.dailyForecastContent {\n    grid-row: 2 / 3;\n    display: flex;\n    flex: 1 0 100%;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.forecast {\n    display: grid;\n    grid-template: 50px 100px 1fr;\n    align-items: center;\n}\n\n.dailyTemps {\n    grid-row: 3 / 4;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.hourlyForecast {\n    width: 750px;\n    height: 500px;\n    overflow-y: auto;\n}\ni {\n    font-size: 32px;\n}\n\n.hourlyHeader {\n    grid-row: 1 / 2;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-family: 'Times New Roman', Times, serif;\n    font-size: 20px;\n    font-weight: bold;\n    color: black;\n    text-align: center;\n}\n\n.hourlyHeader:first-child,\n.hourlyHeader:last-child {\n    margin: 20px;\n}\n\n\n.hourlyData {\n    grid-row: 2 / 3;\n    font-family: 'Times New Roman', Times, serif;\n    font-size: 16px;\n    font-weight: bold;\n    color: black;\n    width: inherit;\n    height: inherit;\n    margin: 10px;\n    padding: 10px;\n}\n\n.hourlyData:nth-child('odd') {\n    background-color: gray;\n}\n\n.hourlyData:nth-child('even') {\n    background-color: white;\n}\n\n/* Footer styling */\nfooter {\n    grid-row: 3 / 4;\n    width: 100%;\n    opacity: 0.7;\n}\n\nfigure {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\nfigcaption {\n    margin-top: 10px;\n    margin-right: 10px;\n    font-family: 'Times New Roman', Times, serif;\n    font-size: 25px;\n    font-weight: bold;\n    color: white;\n}\n\n.loading-overlay {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 10;\n}\n\n.loading-overlay.hidden {\ndisplay: none;\n}\n\n.loader {\n    width: 50px;\n    height: 50px;\n    border: 5px solid rgba(0, 0, 0, 0.2);\n    border-radius: 50%;\n    border-top-color: #007bff;\n    animation: spin 1s linear infinite;\n}\n\n@keyframes spin {\n    from { transform: rotate(0deg); }\n    to { transform: rotate(360deg); }\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://simpleweather/./src/style.css?./node_modules/css-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://simpleweather/./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
-  \**************************************************************/
-/***/ ((module) => {
-
-eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://simpleweather/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
-
-/***/ }),
-
-/***/ "./src/style.css":
-/*!***********************!*\
-  !*** ./src/style.css ***!
-  \***********************/
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\noptions.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://simpleweather/./src/style.css?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
+/* 2 */
 /***/ ((module) => {
 
-eval("\n\nvar stylesInDOM = [];\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n  for (var i = 0; i < stylesInDOM.length; i++) {\n    if (stylesInDOM[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n  return result;\n}\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var indexByIdentifier = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3],\n      supports: item[4],\n      layer: item[5]\n    };\n    if (indexByIdentifier !== -1) {\n      stylesInDOM[indexByIdentifier].references++;\n      stylesInDOM[indexByIdentifier].updater(obj);\n    } else {\n      var updater = addElementStyle(obj, options);\n      options.byIndex = i;\n      stylesInDOM.splice(i, 0, {\n        identifier: identifier,\n        updater: updater,\n        references: 1\n      });\n    }\n    identifiers.push(identifier);\n  }\n  return identifiers;\n}\nfunction addElementStyle(obj, options) {\n  var api = options.domAPI(options);\n  api.update(obj);\n  var updater = function updater(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {\n        return;\n      }\n      api.update(obj = newObj);\n    } else {\n      api.remove();\n    }\n  };\n  return updater;\n}\nmodule.exports = function (list, options) {\n  options = options || {};\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDOM[index].references--;\n    }\n    var newLastIdentifiers = modulesToDom(newList, options);\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n      var _index = getIndexByIdentifier(_identifier);\n      if (stylesInDOM[_index].references === 0) {\n        stylesInDOM[_index].updater();\n        stylesInDOM.splice(_index, 1);\n      }\n    }\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://simpleweather/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+
+var stylesInDOM = [];
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+    identifiers.push(identifier);
+  }
+  return identifiers;
+}
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+  return updater;
+}
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+    var newLastIdentifiers = modulesToDom(newList, options);
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+      var _index = getIndexByIdentifier(_identifier);
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertBySelector.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
-  \********************************************************************/
+/* 3 */
 /***/ ((module) => {
 
-eval("\n\nvar memo = {};\n\n/* istanbul ignore next  */\nfunction getTarget(target) {\n  if (typeof memo[target] === \"undefined\") {\n    var styleTarget = document.querySelector(target);\n\n    // Special case to return head of iframe instead of iframe itself\n    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n      try {\n        // This will throw an exception if access to iframe is blocked\n        // due to cross-origin restrictions\n        styleTarget = styleTarget.contentDocument.head;\n      } catch (e) {\n        // istanbul ignore next\n        styleTarget = null;\n      }\n    }\n    memo[target] = styleTarget;\n  }\n  return memo[target];\n}\n\n/* istanbul ignore next  */\nfunction insertBySelector(insert, style) {\n  var target = getTarget(insert);\n  if (!target) {\n    throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n  }\n  target.appendChild(style);\n}\nmodule.exports = insertBySelector;\n\n//# sourceURL=webpack://simpleweather/./node_modules/style-loader/dist/runtime/insertBySelector.js?");
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+  var needLayer = typeof obj.layer !== "undefined";
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+  css += obj.css;
+  if (needLayer) {
+    css += "}";
+  }
+  if (obj.media) {
+    css += "}";
+  }
+  if (obj.supports) {
+    css += "}";
+  }
+  var sourceMap = obj.sourceMap;
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  }
+
+  // For old IE
+  /* istanbul ignore if  */
+  options.styleTagTransform(css, styleElement, options.options);
+}
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+  styleElement.parentNode.removeChild(styleElement);
+}
+
+/* istanbul ignore next  */
+function domAPI(options) {
+  if (typeof document === "undefined") {
+    return {
+      update: function update() {},
+      remove: function remove() {}
+    };
+  }
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+module.exports = domAPI;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
-  \**********************************************************************/
+/* 4 */
 /***/ ((module) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction insertStyleElement(options) {\n  var element = document.createElement(\"style\");\n  options.setAttributes(element, options.attributes);\n  options.insert(element, options.options);\n  return element;\n}\nmodule.exports = insertStyleElement;\n\n//# sourceURL=webpack://simpleweather/./node_modules/style-loader/dist/runtime/insertStyleElement.js?");
+
+
+var memo = {};
+
+/* istanbul ignore next  */
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target);
+
+    // Special case to return head of iframe instead of iframe itself
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+    memo[target] = styleTarget;
+  }
+  return memo[target];
+}
+
+/* istanbul ignore next  */
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+  target.appendChild(style);
+}
+module.exports = insertBySelector;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
-  \**********************************************************************************/
+/* 5 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction setAttributesWithoutAttributes(styleElement) {\n  var nonce =  true ? __webpack_require__.nc : 0;\n  if (nonce) {\n    styleElement.setAttribute(\"nonce\", nonce);\n  }\n}\nmodule.exports = setAttributesWithoutAttributes;\n\n//# sourceURL=webpack://simpleweather/./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js?");
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
-  \***************************************************************/
+/* 6 */
 /***/ ((module) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj) {\n  var css = \"\";\n  if (obj.supports) {\n    css += \"@supports (\".concat(obj.supports, \") {\");\n  }\n  if (obj.media) {\n    css += \"@media \".concat(obj.media, \" {\");\n  }\n  var needLayer = typeof obj.layer !== \"undefined\";\n  if (needLayer) {\n    css += \"@layer\".concat(obj.layer.length > 0 ? \" \".concat(obj.layer) : \"\", \" {\");\n  }\n  css += obj.css;\n  if (needLayer) {\n    css += \"}\";\n  }\n  if (obj.media) {\n    css += \"}\";\n  }\n  if (obj.supports) {\n    css += \"}\";\n  }\n  var sourceMap = obj.sourceMap;\n  if (sourceMap && typeof btoa !== \"undefined\") {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  }\n\n  // For old IE\n  /* istanbul ignore if  */\n  options.styleTagTransform(css, styleElement, options.options);\n}\nfunction removeStyleElement(styleElement) {\n  // istanbul ignore if\n  if (styleElement.parentNode === null) {\n    return false;\n  }\n  styleElement.parentNode.removeChild(styleElement);\n}\n\n/* istanbul ignore next  */\nfunction domAPI(options) {\n  if (typeof document === \"undefined\") {\n    return {\n      update: function update() {},\n      remove: function remove() {}\n    };\n  }\n  var styleElement = options.insertStyleElement(options);\n  return {\n    update: function update(obj) {\n      apply(styleElement, options, obj);\n    },\n    remove: function remove() {\n      removeStyleElement(styleElement);\n    }\n  };\n}\nmodule.exports = domAPI;\n\n//# sourceURL=webpack://simpleweather/./node_modules/style-loader/dist/runtime/styleDomAPI.js?");
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+module.exports = insertStyleElement;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
-  \*********************************************************************/
+/* 7 */
 /***/ ((module) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://simpleweather/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+module.exports = styleTagTransform;
 
 /***/ }),
+/* 8 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-/***/ "./src/Days.js":
-/*!*********************!*\
-  !*** ./src/Days.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _daily__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./daily */ \"./src/daily.js\");\n/* harmony import */ var _hourly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hourly */ \"./src/hourly.js\");\n\n\n\nconst hourlyData = document.querySelector('.hourlyData');\nconst hourlyDate = document.querySelector('.date');\nconst dailyIcon = document.querySelector('.dailyIcon');\nconst high = document.querySelector('.high');\nconst low = document.querySelector('.low');\n\nfunction nextDay(resolvedWeatherData, dayIndex){\n    const days = resolvedWeatherData.forecast.forecastday;\n    if(dayIndex < days.length - 1){\n        hourlyData.textContent = '';\n        dailyIcon.src = '';\n        high.textContent = '';\n        low.textContent = '';\n        dayIndex += 1;\n        const date = new Date(days[dayIndex].date);\n        const dateArray = date.toString().split(' ');\n        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')\n        _daily__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getCelciusDay(resolvedWeatherData, dayIndex);\n        _hourly__WEBPACK_IMPORTED_MODULE_1__[\"default\"].loadHourlyCelciusData(resolvedWeatherData, dayIndex);\n    }\n    return dayIndex;\n}\n\nfunction previousDay(resolvedWeatherData, dayIndex){\n    const days = resolvedWeatherData.forecast.forecastday;\n    if(dayIndex > 0){\n        hourlyData.textContent = '';\n        dailyIcon.src = '';\n        high.textContent = '';\n        low.textContent = '';\n        dayIndex -= 1;\n        const date = new Date(days[dayIndex].date);\n        const dateArray = date.toString().split(' ');\n        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')\n        _daily__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getCelciusDay(resolvedWeatherData, dayIndex);\n        _hourly__WEBPACK_IMPORTED_MODULE_1__[\"default\"].loadHourlyCelciusData(resolvedWeatherData, dayIndex);\n    }\n    return dayIndex;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ nextDay, previousDay});\n\n//# sourceURL=webpack://simpleweather/./src/Days.js?");
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    position: relative;
+    background-color: gray;
+    color: white;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template: 50px 1fr 75px / 1fr;
+    gap: 20px;
+}
+
+/* Search input and buttons styling */
+.searchDiv {
+    grid-row: 1 / 2;
+    margin: 0 auto;
+}
+
+input[type="search"],
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="search"] {
+    font-size: 25px;
+    border-style: none;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 1px 3px white;
+}
+
+button:focus {
+    background-color: gray;
+}
+
+/* Content styling */
+.contentDiv {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template: 500px 500px / 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.gifAndData {
+    grid-row: 1 / 2;
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gif img {
+    display: grid;
+    box-shadow: 3px 3px 6px black;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border-style: none;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#currentData {
+    display: grid;
+    grid-template: 100px 150px repeat(2, 1fr) / 1fr;
+    width: 750px;
+    height: 500px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px black;
+    background-color: white;
+    color: black;
+}
+
+
+#currentDataHeader {
+    grid-row: 1 / 2;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+}
+
+#currentDataHeader:first-child,
+#currentDataHeader:last-child {
+    margin: 10px;
+}
+
+#currentDataDateLocationCountry {
+    grid-row: 2 / 3;
+}
+
+.currentDataDate,
+.currentDataLocation,
+.currentDataCountry,
+.currentTemp,
+.currentFeeling,
+.dailyForecastTitle {
+    margin-left: 10px;
+}
+
+#currentDataTempCondition {
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#currentDataMetrics {
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#forecastedData {
+    grid-row: 2 / 3;
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dailyForecast,
+.hourlyForecast {
+    display: grid;
+    grid-template: 50px 1fr / 1fr;
+    box-shadow: 3px 3px 6px black;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.dailyForecast {
+    width: 400px;
+    height: 500px;
+}
+
+.dailyForecastTitle {
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.dailyForecastContent {
+    grid-row: 2 / 3;
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forecast {
+    display: grid;
+    grid-template: 50px 100px 1fr;
+    align-items: center;
+}
+
+.dailyTemps {
+    grid-row: 3 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hourlyForecast {
+    width: 750px;
+    height: 500px;
+    overflow-y: auto;
+}
+i {
+    font-size: 32px;
+}
+
+.hourlyHeader {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.hourlyHeader:first-child,
+.hourlyHeader:last-child {
+    margin: 20px;
+}
+
+
+.hourlyData {
+    grid-row: 2 / 3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    width: inherit;
+    height: inherit;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hourlyData:nth-child('odd') {
+    background-color: gray;
+}
+
+.hourlyData:nth-child('even') {
+    background-color: white;
+}
+
+/* Footer styling */
+footer {
+    grid-row: 3 / 4;
+    width: 100%;
+    opacity: 0.7;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.loading-overlay.hidden {
+display: none;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border-top-color: #007bff;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}`, ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
+/* 9 */
+/***/ ((module) => {
 
-/***/ "./src/api.js":
-/*!********************!*\
-  !*** ./src/api.js ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst loadingOverlay = document.querySelector('.loading-overlay');\n\nasync function getWeather(location = localStorage.getItem('lastLocation') ? localStorage.getItem('lastLocation'): 'Tamale'){\n    loadingOverlay.classList.remove('hidden');\n    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fa43114a16544456bb311445240605&q=${location}&days=7`, { mode: \"cors\" });\n    const weatherData = await response.json();\n    loadingOverlay.classList.add('hidden');\n    return weatherData;\n}\n\nasync function getGif(location = localStorage.getItem('lastLocation') ? localStorage.getItem('lastLocation'): 'Tamale'){\n    loadingOverlay.classList.remove('hidden');\n    const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=5jPQE4Oe3NJuZbtMgBTGjkVPTmH2v9MV&q=${location}&limit=1`, { mode: 'cors' });\n    const gifData = await response.json();\n    loadingOverlay.classList.add('hidden');\n    return gifData;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ getWeather, getGif});\n\n//# sourceURL=webpack://simpleweather/./src/api.js?");
 
-/***/ }),
-
-/***/ "./src/current.js":
-/*!************************!*\
-  !*** ./src/current.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst currentDataHeaderTitle = document.querySelector('.currentDataHeaderTitle');\nconst currentDataHeaderTime = document.querySelector('.currentDataHeaderTime');\nconst currentDataHeaderUpdate = document.querySelector('.currentDataHeaderUpdate');\nconst currentDataContainer = document.querySelector('#currentData');\nconst currentDataDate = document.querySelector('.currentDataDate');\nconst currentDataLocation = document.querySelector('.currentDataLocation');\nconst currentDataCountry = document.querySelector('.currentDataCountry');\nconst currentTemp = document.querySelector('.currentTemp');\nconst currentFeeling = document.querySelector('.currentFeeling');\nconst currentDataIcon = document.querySelector('#currentDataIcon');\nconst currentCondition = document.querySelector('.currentCondition');\nconst speed = document.querySelector('.speed');\nconst speedText = document.querySelector('.speedText');\nconst percent = document.querySelector('.percent');\nconst percentText = document.querySelector('.percentText');\nconst uv = document.querySelector('.uv');\nconst uvText = document.querySelector('.uvText');\nconst visibility = document.querySelector('.visibility');\nconst visibilityText = document.querySelector('.visibilityText');\nconst dailyForecast = document.querySelector('.dailyForecast');\n\n\nfunction displayCurrentFahrenheihtData(resolvedData){\n    currentDataContainer.style = 'display: grid';\n    dailyForecast.style.display = 'grid';\n\n    const locationData = resolvedData.location.localtime.toString().split(' ');\n    currentDataHeaderTime.textContent = locationData[1]\n    currentDataHeaderTime.style = 'text-align: center;';\n    currentDataHeaderUpdate.textContent = 'Last Updated';\n    currentDataHeaderUpdate.style = 'opacity: 0.5; font-weight: bold;';\n    currentDataHeaderTitle.textContent = 'Current Weather';\n\n    const date = new Date(resolvedData.forecast.forecastday[0].date)\n    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];\n    const dateArray = date.toString().split(' ');\n    currentDataDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');\n    currentDataLocation.textContent = resolvedData.location.name + ', ' + resolvedData.location.region;\n    currentDataCountry.textContent = resolvedData.location.country;\n    currentDataCountry.style = 'opacity: 0.5; font-weight: bold;';\n\n    const currentTempSup = document.createElement('sup');\n    const currentTempSpan = document.createElement('span');\n    currentTempSup.textContent = 'o';\n    currentTempSpan.textContent = 'F';\n    currentTemp.textContent = resolvedData.current.temp_f \n    currentTemp.appendChild(currentTempSup)\n    currentTemp.appendChild(currentTempSpan)\n    const currentFeelingSup = document.createElement('sup');\n    const currentFeelingSpan = document.createElement('span');\n    currentFeelingSup.textContent = 'o';\n    currentFeelingSpan.textContent = 'F';\n    currentFeeling.textContent = 'Feels like ' + resolvedData.current.feelslike_f;\n    currentFeeling.style = 'opacity: 0.5; font-weight: bold;'\n    currentFeeling.appendChild(currentFeelingSup)\n    currentFeeling.appendChild(currentFeelingSpan)\n    currentDataIcon.src = 'https:'+resolvedData.current.condition.icon;\n    currentCondition.textContent = resolvedData.current.condition.text;\n    currentCondition.style = 'margin-left: 0';\n\n    speed.textContent = resolvedData.current.wind_kph + ' Km/h '+ resolvedData.current.wind_dir;\n    speedText.textContent = 'Wind';\n    speed.style = 'text-align: center';\n    speedText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    percent.textContent = resolvedData.current.humidity + '%';\n    percentText.textContent = 'Humidity';\n    percent.style = 'text-align: center';\n    percentText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    uv.textContent = resolvedData.current.uv;\n    uvText.textContent = 'UV Index';\n    uv.style = 'text-align: center';\n    uvText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    visibility.textContent = resolvedData.current.vis_km + ' Km';\n    visibilityText.textContent = 'Visibility';\n    visibilityText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    visibility.style = 'text-align: center';\n}\n\nfunction displayCurrentCelciusData(resolvedData){\n    currentDataContainer.style = 'display: grid';\n    dailyForecast.style.display = 'grid';\n    const locationData = resolvedData.location.localtime.toString().split(' ');\n    currentDataHeaderTime.textContent = locationData[1]\n    currentDataHeaderTime.style = 'text-align: center;';\n    currentDataHeaderUpdate.textContent = 'Last Updated';\n    currentDataHeaderUpdate.style = 'opacity: 0.5; font-weight: bold;';\n    currentDataHeaderTitle.textContent = 'Current Weather';\n\n    const date = new Date(resolvedData.forecast.forecastday[0].date)\n    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];\n    const dateArray = date.toString().split(' ');\n    currentDataDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');\n    currentDataLocation.textContent = resolvedData.location.name + ', ' + resolvedData.location.region;\n    currentDataCountry.textContent = resolvedData.location.country;\n    currentDataCountry.style = 'opacity: 0.5; font-weight: bold;';\n\n    const currentTempSup = document.createElement('sup');\n    const currentTempSpan = document.createElement('span');\n    currentTempSup.textContent = 'o';\n    currentTempSpan.textContent = 'C';\n    currentTemp.textContent = resolvedData.current.temp_c; \n    currentTemp.appendChild(currentTempSup)\n    currentTemp.appendChild(currentTempSpan)\n    const currentFeelingSup = document.createElement('sup');\n    const currentFeelingSpan = document.createElement('span');\n    currentFeelingSup.textContent = 'o';\n    currentFeelingSpan.textContent = 'C';\n    currentFeeling.textContent = 'Feels like ' + resolvedData.current.feelslike_c;\n    currentFeeling.style = 'opacity: 0.5; font-weight: bold;'\n    currentFeeling.appendChild(currentFeelingSup)\n    currentFeeling.appendChild(currentFeelingSpan)\n    currentDataIcon.src = 'https:'+resolvedData.current.condition.icon;\n    currentCondition.textContent = resolvedData.current.condition.text;\n    currentCondition.style = 'margin-left: 0';\n\n    speed.textContent = resolvedData.current.wind_kph + ' Km/h '+ resolvedData.current.wind_dir;\n    speedText.textContent = 'Wind';\n    speed.style = 'text-align: center';\n    speedText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    percent.textContent = resolvedData.current.humidity + '%';\n    percentText.textContent = 'Humidity';\n    percent.style = 'text-align: center';\n    percentText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    uv.textContent = resolvedData.current.uv;\n    uvText.textContent = 'UV Index';\n    uv.style = 'text-align: center';\n    uvText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    visibility.textContent = resolvedData.current.vis_km + ' Km';\n    visibilityText.textContent = 'Visibility';\n    visibilityText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';\n    visibility.style = 'text-align: center';\n}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ displayCurrentCelciusData, displayCurrentFahrenheihtData });\n\n//# sourceURL=webpack://simpleweather/./src/current.js?");
+module.exports = function (i) {
+  return i[1];
+};
 
 /***/ }),
+/* 10 */
+/***/ ((module) => {
 
-/***/ "./src/daily.js":
-/*!**********************!*\
-  !*** ./src/daily.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst forecastDayAndDate = document.querySelector('.forecastDayAndDate');\nconst dailyIcon = document.querySelector('.dailyIcon');\nconst high = document.querySelector('.high');\nconst low = document.querySelector('.low');\n\nfunction getCelciusDay(resolvedData, n = 0){\n    const date = new Date(resolvedData.forecast.forecastday[n].date)\n    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];\n    const dateArray = date.toString().split(' ');\n    forecastDayAndDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');\n    dailyIcon.src = 'https:' + resolvedData.forecast.forecastday[n].day.condition.icon;\n    dailyIcon.style = 'height: 100px; width: 100px; margin: 0 auto;';\n    const highTempSup = document.createElement('sup');\n    const highTempSpan = document.createElement('span');\n    highTempSup.textContent = 'o';\n    highTempSpan.textContent = 'C';\n    high.textContent = resolvedData.forecast.forecastday[n].day.maxtemp_c;\n    high.appendChild(highTempSup)\n    high.appendChild(highTempSpan);\n    const lowTempSup = document.createElement('sup');\n    const lowTempSpan = document.createElement('span');\n    lowTempSup.textContent = 'o';\n    lowTempSpan.textContent = 'C';\n    low.textContent = resolvedData.forecast.forecastday[n].day.mintemp_c;\n    low.style = 'opacity: 0.5; font-weight: bold;';\n    low.appendChild(lowTempSup)\n    low.appendChild(lowTempSpan)\n}\n\nfunction getFahrenheihtDay(resolvedData, n = 0){\n    const date = new Date(resolvedData.forecast.forecastday[n].date)\n    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];\n    const dateArray = date.toString().split(' ');\n    forecastDayAndDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');\n    dailyIcon.src = 'https:' + resolvedData.forecast.forecastday[0].day.condition.icon;\n    dailyIcon.style = 'height: 100px; width: 100px; margin: 0 auto;';\n    const highTempSup = document.createElement('sup');\n    const highTempSpan = document.createElement('span');\n    highTempSup.textContent = 'o';\n    highTempSpan.textContent = 'F';\n    high.textContent = resolvedData.forecast.forecastday[n].day.maxtemp_f;\n    high.appendChild(highTempSup)\n    high.appendChild(highTempSpan);\n    const lowTempSup = document.createElement('sup');\n    const lowTempSpan = document.createElement('span');\n    lowTempSup.textContent = 'o';\n    lowTempSpan.textContent = 'F';\n    low.textContent = resolvedData.forecast.forecastday[n].day.mintemp_f;\n    low.style = 'opacity: 0.5; font-weight: bold;';\n    low.appendChild(lowTempSup)\n    low.appendChild(lowTempSpan)\n}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ getCelciusDay, getFahrenheihtDay });\n\n//# sourceURL=webpack://simpleweather/./src/daily.js?");
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = [];
+
+  // return the list of modules as css string
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+      content += cssWithMappingToString(item);
+      if (needLayer) {
+        content += "}";
+      }
+      if (item[2]) {
+        content += "}";
+      }
+      if (item[4]) {
+        content += "}";
+      }
+      return content;
+    }).join("");
+  };
+
+  // import a list of modules into the list
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+    var alreadyImportedModules = {};
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+      list.push(item);
+    }
+  };
+  return list;
+};
 
 /***/ }),
-
-/***/ "./src/hourly.js":
-/*!***********************!*\
-  !*** ./src/hourly.js ***!
-  \***********************/
+/* 11 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction loadHourlyCelciusData(resolvedData, n = 0){\n    const hourlyData = document.querySelector('.hourlyData');\n    const hourlyTitle = document.querySelector('.hourlyTitle');\n    const header = document.createElement('thead');\n    const headerRow = document.createElement('tr');\n    hourlyTitle.textContent = \"Hourly Forecast\";\n    const hourlyForecast = document.querySelector('.hourlyForecast');\n    hourlyForecast.style.display = \"grid\";\n\n    const headerData = ['Time', 'Icon', 'Condition', 'Temp (Celcius)', 'Precipitation (mm)', 'Wind Speed (kph)', 'Humidity', 'Feels Like'];\n    headerData.forEach(text => {\n        const data = document.createElement('th');\n        data.textContent = text;\n        headerRow.appendChild(data);\n    })\n\n    header.appendChild(headerRow);\n    hourlyData.appendChild(header);\n    const days = resolvedData.forecast.forecastday;\n    days[n].hour.forEach(hour => {\n        const icon = document.createElement('img');\n        icon.src = 'https:'+hour.condition.icon;\n        const row = document.createElement('tr');\n        const rowData1 = document.createElement('td');\n        const rowData2 = document.createElement('td');\n        const rowData3 = document.createElement('td');\n        const rowData4 = document.createElement('td');\n        const rowData5 = document.createElement('td');\n        const rowData6 = document.createElement('td');\n        const rowData7 = document.createElement('td');\n        const rowData8 = document.createElement('td');\n        rowData1.textContent = hour.time.split(' ')[1];\n        rowData2.appendChild(icon);\n        rowData3.textContent = hour.condition.text;\n        rowData4.textContent = hour.temp_c;\n        rowData5.textContent = hour.precip_mm;\n        rowData6.textContent = hour.wind_kph;\n        rowData7.textContent = hour.humidity;\n        rowData8.textContent = hour.feelslike_c;\n    \n        row.appendChild(rowData1);\n        row.appendChild(rowData2);\n        row.appendChild(rowData3);\n        row.appendChild(rowData4);\n        row.appendChild(rowData5);\n        row.appendChild(rowData6);\n        row.appendChild(rowData7);\n        row.appendChild(rowData8);\n        row.style = 'text-align: center';\n    \n        hourlyData.appendChild(row);\n    })\n}\n\nfunction loadHourlyFahrenheihtData(resolvedData, n = 0){\n    const hourlyData = document.querySelector('.hourlyData');\n    const hourlyTitle = document.querySelector('.hourlyTitle');\n    const header = document.createElement('thead');\n    const headerRow = document.createElement('tr');\n    hourlyTitle.textContent = \"Hourly Forecast\";\n    const hourlyForecast = document.querySelector('.hourlyForecast');\n    hourlyForecast.style.display = \"grid\";\n\n    const headerData = ['Time', 'Icon', 'Condition', 'Temp (Fahrenheiht)', 'Precipitation (mm)', 'Wind Speed (kph)', 'Humidity', 'Feels Like'];\n    headerData.forEach(text => {\n        const data = document.createElement('th');\n        data.textContent = text;\n        headerRow.appendChild(data);\n    })\n\n    header.appendChild(headerRow);\n    hourlyData.appendChild(header);\n    const days = resolvedData.forecast.forecastday;\n    days[n].hour.forEach(hour => {\n        const icon = document.createElement('img');\n        icon.src = 'https:'+hour.condition.icon;\n        const row = document.createElement('tr');\n        const rowData1 = document.createElement('td');\n        const rowData2 = document.createElement('td');\n        const rowData3 = document.createElement('td');\n        const rowData4 = document.createElement('td');\n        const rowData5 = document.createElement('td');\n        const rowData6 = document.createElement('td');\n        const rowData7 = document.createElement('td');\n        const rowData8 = document.createElement('td');\n        rowData1.textContent = hour.time.split(' ')[1];\n        rowData2.appendChild(icon);\n        rowData3.textContent = hour.condition.text;\n        rowData4.textContent = hour.temp_f;\n        rowData5.textContent = hour.precip_mm;\n        rowData6.textContent = hour.wind_kph;\n        rowData7.textContent = hour.humidity;\n        rowData8.textContent = hour.feelslike_f;\n    \n        row.appendChild(rowData1);\n        row.appendChild(rowData2);\n        row.appendChild(rowData3);\n        row.appendChild(rowData4);\n        row.appendChild(rowData5);\n        row.appendChild(rowData6);\n        row.appendChild(rowData7);\n        row.appendChild(rowData8);\n        row.style = 'text-align: center';\n    \n        hourlyData.appendChild(row);\n    })\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ loadHourlyCelciusData, loadHourlyFahrenheihtData});\n\n//# sourceURL=webpack://simpleweather/./src/hourly.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const loadingOverlay = document.querySelector('.loading-overlay');
+
+async function getWeather(location = localStorage.getItem('lastLocation') ? localStorage.getItem('lastLocation'): 'Tamale'){
+    loadingOverlay.classList.remove('hidden');
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fa43114a16544456bb311445240605&q=${location}&days=7`, { mode: "cors" });
+    const weatherData = await response.json();
+    loadingOverlay.classList.add('hidden');
+    return weatherData;
+}
+
+async function getGif(location = localStorage.getItem('lastLocation') ? localStorage.getItem('lastLocation'): 'Tamale'){
+    loadingOverlay.classList.remove('hidden');
+    const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=5jPQE4Oe3NJuZbtMgBTGjkVPTmH2v9MV&q=${location}&limit=1`, { mode: 'cors' });
+    const gifData = await response.json();
+    loadingOverlay.classList.add('hidden');
+    return gifData;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ getWeather, getGif});
 
 /***/ }),
-
-/***/ "./src/script.js":
-/*!***********************!*\
-  !*** ./src/script.js ***!
-  \***********************/
+/* 12 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api */ \"./src/api.js\");\n/* harmony import */ var _daily__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./daily */ \"./src/daily.js\");\n/* harmony import */ var _current__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./current */ \"./src/current.js\");\n/* harmony import */ var _hourly__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hourly */ \"./src/hourly.js\");\n/* harmony import */ var _Days__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Days */ \"./src/Days.js\");\n\n\n\n\n\n\n\nconst search = document.querySelector('#search');\nconst celcius = document.querySelector('#celcius');\nconst fahrenheiht = document.querySelector('#fahrenheiht');\nconst hourlyDate = document.querySelector('.date');\nconst gif = document.querySelector('#gif');\nconst hourlyData = document.querySelector('.hourlyData');\nconst previousDay = document.querySelector('#previousDay');\nconst nextDay = document.querySelector('#nextDay');\n\nnextDay.style = 'cursor: pointer';\npreviousDay.style = 'cursor: pointer';\n\nlet city;\nlet daysIndex = 0;\n\n// let n = 0;\n\nsearch.addEventListener('change', () => {\n    localStorage.setItem('lastLocation', search.value);\n    city = search.value;\n    search.value = '';\n})\n\nnextDay.addEventListener('click', () => {\n    const data = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getWeather();\n    data.then(resolvedData => {\n        daysIndex = _Days__WEBPACK_IMPORTED_MODULE_5__[\"default\"].nextDay(resolvedData, daysIndex);\n    })\n})\n\npreviousDay.addEventListener('click', () => {\n    const data = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getWeather();\n    data.then(resolvedData => {\n        daysIndex = _Days__WEBPACK_IMPORTED_MODULE_5__[\"default\"].previousDay(resolvedData, daysIndex);\n    })\n})\n\nwindow.onload = onWindowLoad;\n\nfunction onWindowLoad(){\n    const gifData = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getGif();\n    gifData.then(result => {\n        gif.src = result.data[0].images.original.url;\n        gif.style = 'width: 400px; height: 500px;'\n    })\n    const data = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getWeather();\n    data.then(resolvedData => {\n        const days = resolvedData.forecast.forecastday;\n        const date = new Date(days[daysIndex].date);\n        const dateArray = date.toString().split(' ');\n        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')\n        \n        _current__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayCurrentCelciusData(resolvedData);\n        _daily__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getCelciusDay(resolvedData, daysIndex);\n        _hourly__WEBPACK_IMPORTED_MODULE_4__[\"default\"].loadHourlyCelciusData(resolvedData, daysIndex);\n    })\n}\n\ncelcius.addEventListener('click', () => {\n    const gifData = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getGif(city);\n    gifData.then(result => {\n        gif.src = result.data[0].images.original.url;\n        gif.style = 'width: 400px; height: 500px;'\n    })\n    const data = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getWeather(city);\n    data.then(resolvedData => {\n        hourlyData.textContent = '';\n        const days = resolvedData.forecast.forecastday;\n        const date = new Date(days[daysIndex].date);\n        const dateArray = date.toString().split(' ');\n        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')\n        \n        _current__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayCurrentCelciusData(resolvedData);\n        _daily__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getCelciusDay(resolvedData, daysIndex);\n        _hourly__WEBPACK_IMPORTED_MODULE_4__[\"default\"].loadHourlyCelciusData(resolvedData, daysIndex);\n    })\n})\n\nfahrenheiht.addEventListener('click', () => {\n    const gifData = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getGif(city);\n    gifData.then(result => {\n        gif.src = result.data[0].images.original.url;\n        gif.style = 'width: 400px; height: 500px;'\n    })\n    const data = _api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getWeather(city);\n    data.then(resolvedData => {\n        hourlyData.textContent = '';\n        const days = resolvedData.forecast.forecastday;\n        const date = new Date(days[daysIndex].date);\n        const dateArray = date.toString().split(' ');\n        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')\n        \n        _current__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayCurrentFahrenheihtData(resolvedData);\n        _daily__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getFahrenheihtDay(resolvedData, daysIndex);\n        _hourly__WEBPACK_IMPORTED_MODULE_4__[\"default\"].loadHourlyFahrenheihtData(resolvedData, daysIndex);\n    })\n})\n\n//# sourceURL=webpack://simpleweather/./src/script.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const forecastDayAndDate = document.querySelector('.forecastDayAndDate');
+const dailyIcon = document.querySelector('.dailyIcon');
+const high = document.querySelector('.high');
+const low = document.querySelector('.low');
+
+function getCelciusDay(resolvedData, n = 0){
+    const date = new Date(resolvedData.forecast.forecastday[n].date)
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const dateArray = date.toString().split(' ');
+    forecastDayAndDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');
+    dailyIcon.src = 'https:' + resolvedData.forecast.forecastday[n].day.condition.icon;
+    dailyIcon.style = 'height: 100px; width: 100px; margin: 0 auto;';
+    const highTempSup = document.createElement('sup');
+    const highTempSpan = document.createElement('span');
+    highTempSup.textContent = 'o';
+    highTempSpan.textContent = 'C';
+    high.textContent = resolvedData.forecast.forecastday[n].day.maxtemp_c;
+    high.appendChild(highTempSup)
+    high.appendChild(highTempSpan);
+    const lowTempSup = document.createElement('sup');
+    const lowTempSpan = document.createElement('span');
+    lowTempSup.textContent = 'o';
+    lowTempSpan.textContent = 'C';
+    low.textContent = resolvedData.forecast.forecastday[n].day.mintemp_c;
+    low.style = 'opacity: 0.5; font-weight: bold;';
+    low.appendChild(lowTempSup)
+    low.appendChild(lowTempSpan)
+}
+
+function getFahrenheihtDay(resolvedData, n = 0){
+    const date = new Date(resolvedData.forecast.forecastday[n].date)
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const dateArray = date.toString().split(' ');
+    forecastDayAndDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');
+    dailyIcon.src = 'https:' + resolvedData.forecast.forecastday[0].day.condition.icon;
+    dailyIcon.style = 'height: 100px; width: 100px; margin: 0 auto;';
+    const highTempSup = document.createElement('sup');
+    const highTempSpan = document.createElement('span');
+    highTempSup.textContent = 'o';
+    highTempSpan.textContent = 'F';
+    high.textContent = resolvedData.forecast.forecastday[n].day.maxtemp_f;
+    high.appendChild(highTempSup)
+    high.appendChild(highTempSpan);
+    const lowTempSup = document.createElement('sup');
+    const lowTempSpan = document.createElement('span');
+    lowTempSup.textContent = 'o';
+    lowTempSpan.textContent = 'F';
+    low.textContent = resolvedData.forecast.forecastday[n].day.mintemp_f;
+    low.style = 'opacity: 0.5; font-weight: bold;';
+    low.appendChild(lowTempSup)
+    low.appendChild(lowTempSpan)
+}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ getCelciusDay, getFahrenheihtDay });
+
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const currentDataHeaderTitle = document.querySelector('.currentDataHeaderTitle');
+const currentDataHeaderTime = document.querySelector('.currentDataHeaderTime');
+const currentDataHeaderUpdate = document.querySelector('.currentDataHeaderUpdate');
+const currentDataContainer = document.querySelector('#currentData');
+const currentDataDate = document.querySelector('.currentDataDate');
+const currentDataLocation = document.querySelector('.currentDataLocation');
+const currentDataCountry = document.querySelector('.currentDataCountry');
+const currentTemp = document.querySelector('.currentTemp');
+const currentFeeling = document.querySelector('.currentFeeling');
+const currentDataIcon = document.querySelector('#currentDataIcon');
+const currentCondition = document.querySelector('.currentCondition');
+const speed = document.querySelector('.speed');
+const speedText = document.querySelector('.speedText');
+const percent = document.querySelector('.percent');
+const percentText = document.querySelector('.percentText');
+const uv = document.querySelector('.uv');
+const uvText = document.querySelector('.uvText');
+const visibility = document.querySelector('.visibility');
+const visibilityText = document.querySelector('.visibilityText');
+const dailyForecast = document.querySelector('.dailyForecast');
+
+
+function displayCurrentFahrenheihtData(resolvedData){
+    currentDataContainer.style = 'display: grid';
+    dailyForecast.style.display = 'grid';
+
+    const locationData = resolvedData.location.localtime.toString().split(' ');
+    currentDataHeaderTime.textContent = locationData[1]
+    currentDataHeaderTime.style = 'text-align: center;';
+    currentDataHeaderUpdate.textContent = 'Last Updated';
+    currentDataHeaderUpdate.style = 'opacity: 0.5; font-weight: bold;';
+    currentDataHeaderTitle.textContent = 'Current Weather';
+
+    const date = new Date(resolvedData.forecast.forecastday[0].date)
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const dateArray = date.toString().split(' ');
+    currentDataDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');
+    currentDataLocation.textContent = resolvedData.location.name + ', ' + resolvedData.location.region;
+    currentDataCountry.textContent = resolvedData.location.country;
+    currentDataCountry.style = 'opacity: 0.5; font-weight: bold;';
+
+    const currentTempSup = document.createElement('sup');
+    const currentTempSpan = document.createElement('span');
+    currentTempSup.textContent = 'o';
+    currentTempSpan.textContent = 'F';
+    currentTemp.textContent = resolvedData.current.temp_f 
+    currentTemp.appendChild(currentTempSup)
+    currentTemp.appendChild(currentTempSpan)
+    const currentFeelingSup = document.createElement('sup');
+    const currentFeelingSpan = document.createElement('span');
+    currentFeelingSup.textContent = 'o';
+    currentFeelingSpan.textContent = 'F';
+    currentFeeling.textContent = 'Feels like ' + resolvedData.current.feelslike_f;
+    currentFeeling.style = 'opacity: 0.5; font-weight: bold;'
+    currentFeeling.appendChild(currentFeelingSup)
+    currentFeeling.appendChild(currentFeelingSpan)
+    currentDataIcon.src = 'https:'+resolvedData.current.condition.icon;
+    currentCondition.textContent = resolvedData.current.condition.text;
+    currentCondition.style = 'margin-left: 0';
+
+    speed.textContent = resolvedData.current.wind_kph + ' Km/h '+ resolvedData.current.wind_dir;
+    speedText.textContent = 'Wind';
+    speed.style = 'text-align: center';
+    speedText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    percent.textContent = resolvedData.current.humidity + '%';
+    percentText.textContent = 'Humidity';
+    percent.style = 'text-align: center';
+    percentText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    uv.textContent = resolvedData.current.uv;
+    uvText.textContent = 'UV Index';
+    uv.style = 'text-align: center';
+    uvText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    visibility.textContent = resolvedData.current.vis_km + ' Km';
+    visibilityText.textContent = 'Visibility';
+    visibilityText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    visibility.style = 'text-align: center';
+}
+
+function displayCurrentCelciusData(resolvedData){
+    currentDataContainer.style = 'display: grid';
+    dailyForecast.style.display = 'grid';
+    const locationData = resolvedData.location.localtime.toString().split(' ');
+    currentDataHeaderTime.textContent = locationData[1]
+    currentDataHeaderTime.style = 'text-align: center;';
+    currentDataHeaderUpdate.textContent = 'Last Updated';
+    currentDataHeaderUpdate.style = 'opacity: 0.5; font-weight: bold;';
+    currentDataHeaderTitle.textContent = 'Current Weather';
+
+    const date = new Date(resolvedData.forecast.forecastday[0].date)
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const dateArray = date.toString().split(' ');
+    currentDataDate.textContent = days[date.getDay() - 1] + ', '+ [dateArray[1], dateArray[2]].join(' ');
+    currentDataLocation.textContent = resolvedData.location.name + ', ' + resolvedData.location.region;
+    currentDataCountry.textContent = resolvedData.location.country;
+    currentDataCountry.style = 'opacity: 0.5; font-weight: bold;';
+
+    const currentTempSup = document.createElement('sup');
+    const currentTempSpan = document.createElement('span');
+    currentTempSup.textContent = 'o';
+    currentTempSpan.textContent = 'C';
+    currentTemp.textContent = resolvedData.current.temp_c; 
+    currentTemp.appendChild(currentTempSup)
+    currentTemp.appendChild(currentTempSpan)
+    const currentFeelingSup = document.createElement('sup');
+    const currentFeelingSpan = document.createElement('span');
+    currentFeelingSup.textContent = 'o';
+    currentFeelingSpan.textContent = 'C';
+    currentFeeling.textContent = 'Feels like ' + resolvedData.current.feelslike_c;
+    currentFeeling.style = 'opacity: 0.5; font-weight: bold;'
+    currentFeeling.appendChild(currentFeelingSup)
+    currentFeeling.appendChild(currentFeelingSpan)
+    currentDataIcon.src = 'https:'+resolvedData.current.condition.icon;
+    currentCondition.textContent = resolvedData.current.condition.text;
+    currentCondition.style = 'margin-left: 0';
+
+    speed.textContent = resolvedData.current.wind_kph + ' Km/h '+ resolvedData.current.wind_dir;
+    speedText.textContent = 'Wind';
+    speed.style = 'text-align: center';
+    speedText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    percent.textContent = resolvedData.current.humidity + '%';
+    percentText.textContent = 'Humidity';
+    percent.style = 'text-align: center';
+    percentText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    uv.textContent = resolvedData.current.uv;
+    uvText.textContent = 'UV Index';
+    uv.style = 'text-align: center';
+    uvText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    visibility.textContent = resolvedData.current.vis_km + ' Km';
+    visibilityText.textContent = 'Visibility';
+    visibilityText.style = 'opacity: 0.5; font-weight: bold; text-align: center;';
+    visibility.style = 'text-align: center';
+}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ displayCurrentCelciusData, displayCurrentFahrenheihtData });
+
+/***/ }),
+/* 14 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function loadHourlyCelciusData(resolvedData, n = 0){
+    const hourlyData = document.querySelector('.hourlyData');
+    const hourlyTitle = document.querySelector('.hourlyTitle');
+    const header = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    hourlyTitle.textContent = "Hourly Forecast";
+    const hourlyForecast = document.querySelector('.hourlyForecast');
+    hourlyForecast.style.display = "grid";
+
+    const headerData = ['Time', 'Icon', 'Condition', 'Temp (Celcius)', 'Precipitation (mm)', 'Wind Speed (kph)', 'Humidity', 'Feels Like'];
+    headerData.forEach(text => {
+        const data = document.createElement('th');
+        data.textContent = text;
+        headerRow.appendChild(data);
+    })
+
+    header.appendChild(headerRow);
+    hourlyData.appendChild(header);
+    const days = resolvedData.forecast.forecastday;
+    days[n].hour.forEach(hour => {
+        const icon = document.createElement('img');
+        icon.src = 'https:'+hour.condition.icon;
+        const row = document.createElement('tr');
+        const rowData1 = document.createElement('td');
+        const rowData2 = document.createElement('td');
+        const rowData3 = document.createElement('td');
+        const rowData4 = document.createElement('td');
+        const rowData5 = document.createElement('td');
+        const rowData6 = document.createElement('td');
+        const rowData7 = document.createElement('td');
+        const rowData8 = document.createElement('td');
+        rowData1.textContent = hour.time.split(' ')[1];
+        rowData2.appendChild(icon);
+        rowData3.textContent = hour.condition.text;
+        rowData4.textContent = hour.temp_c;
+        rowData5.textContent = hour.precip_mm;
+        rowData6.textContent = hour.wind_kph;
+        rowData7.textContent = hour.humidity;
+        rowData8.textContent = hour.feelslike_c;
+    
+        row.appendChild(rowData1);
+        row.appendChild(rowData2);
+        row.appendChild(rowData3);
+        row.appendChild(rowData4);
+        row.appendChild(rowData5);
+        row.appendChild(rowData6);
+        row.appendChild(rowData7);
+        row.appendChild(rowData8);
+        row.style = 'text-align: center';
+    
+        hourlyData.appendChild(row);
+    })
+}
+
+function loadHourlyFahrenheihtData(resolvedData, n = 0){
+    const hourlyData = document.querySelector('.hourlyData');
+    const hourlyTitle = document.querySelector('.hourlyTitle');
+    const header = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    hourlyTitle.textContent = "Hourly Forecast";
+    const hourlyForecast = document.querySelector('.hourlyForecast');
+    hourlyForecast.style.display = "grid";
+
+    const headerData = ['Time', 'Icon', 'Condition', 'Temp (Fahrenheiht)', 'Precipitation (mm)', 'Wind Speed (kph)', 'Humidity', 'Feels Like'];
+    headerData.forEach(text => {
+        const data = document.createElement('th');
+        data.textContent = text;
+        headerRow.appendChild(data);
+    })
+
+    header.appendChild(headerRow);
+    hourlyData.appendChild(header);
+    const days = resolvedData.forecast.forecastday;
+    days[n].hour.forEach(hour => {
+        const icon = document.createElement('img');
+        icon.src = 'https:'+hour.condition.icon;
+        const row = document.createElement('tr');
+        const rowData1 = document.createElement('td');
+        const rowData2 = document.createElement('td');
+        const rowData3 = document.createElement('td');
+        const rowData4 = document.createElement('td');
+        const rowData5 = document.createElement('td');
+        const rowData6 = document.createElement('td');
+        const rowData7 = document.createElement('td');
+        const rowData8 = document.createElement('td');
+        rowData1.textContent = hour.time.split(' ')[1];
+        rowData2.appendChild(icon);
+        rowData3.textContent = hour.condition.text;
+        rowData4.textContent = hour.temp_f;
+        rowData5.textContent = hour.precip_mm;
+        rowData6.textContent = hour.wind_kph;
+        rowData7.textContent = hour.humidity;
+        rowData8.textContent = hour.feelslike_f;
+    
+        row.appendChild(rowData1);
+        row.appendChild(rowData2);
+        row.appendChild(rowData3);
+        row.appendChild(rowData4);
+        row.appendChild(rowData5);
+        row.appendChild(rowData6);
+        row.appendChild(rowData7);
+        row.appendChild(rowData8);
+        row.style = 'text-align: center';
+    
+        hourlyData.appendChild(row);
+    })
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ loadHourlyCelciusData, loadHourlyFahrenheihtData});
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _daily__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _hourly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+
+
+
+const hourlyData = document.querySelector('.hourlyData');
+const hourlyDate = document.querySelector('.date');
+const dailyIcon = document.querySelector('.dailyIcon');
+const high = document.querySelector('.high');
+const low = document.querySelector('.low');
+
+function nextDay(resolvedWeatherData, dayIndex){
+    const days = resolvedWeatherData.forecast.forecastday;
+    if(dayIndex < days.length - 1){
+        hourlyData.textContent = '';
+        dailyIcon.src = '';
+        high.textContent = '';
+        low.textContent = '';
+        dayIndex += 1;
+        const date = new Date(days[dayIndex].date);
+        const dateArray = date.toString().split(' ');
+        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')
+        _daily__WEBPACK_IMPORTED_MODULE_0__["default"].getCelciusDay(resolvedWeatherData, dayIndex);
+        _hourly__WEBPACK_IMPORTED_MODULE_1__["default"].loadHourlyCelciusData(resolvedWeatherData, dayIndex);
+    }
+    return dayIndex;
+}
+
+function previousDay(resolvedWeatherData, dayIndex){
+    const days = resolvedWeatherData.forecast.forecastday;
+    if(dayIndex > 0){
+        hourlyData.textContent = '';
+        dailyIcon.src = '';
+        high.textContent = '';
+        low.textContent = '';
+        dayIndex -= 1;
+        const date = new Date(days[dayIndex].date);
+        const dateArray = date.toString().split(' ');
+        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')
+        _daily__WEBPACK_IMPORTED_MODULE_0__["default"].getCelciusDay(resolvedWeatherData, dayIndex);
+        _hourly__WEBPACK_IMPORTED_MODULE_1__["default"].loadHourlyCelciusData(resolvedWeatherData, dayIndex);
+    }
+    return dayIndex;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ nextDay, previousDay});
 
 /***/ })
-
-/******/ 	});
+/******/ 	]);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -243,11 +1180,121 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/script.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _daily__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _current__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _hourly__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
+/* harmony import */ var _Days__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(15);
+
+
+
+
+
+
+
+const search = document.querySelector('#search');
+const celcius = document.querySelector('#celcius');
+const fahrenheiht = document.querySelector('#fahrenheiht');
+const hourlyDate = document.querySelector('.date');
+const gif = document.querySelector('#gif');
+const hourlyData = document.querySelector('.hourlyData');
+const previousDay = document.querySelector('#previousDay');
+const nextDay = document.querySelector('#nextDay');
+
+nextDay.style = 'cursor: pointer';
+previousDay.style = 'cursor: pointer';
+
+let city;
+let daysIndex = 0;
+
+// let n = 0;
+
+search.addEventListener('change', () => {
+    localStorage.setItem('lastLocation', search.value);
+    city = search.value;
+    search.value = '';
+})
+
+nextDay.addEventListener('click', () => {
+    const data = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getWeather();
+    data.then(resolvedData => {
+        daysIndex = _Days__WEBPACK_IMPORTED_MODULE_5__["default"].nextDay(resolvedData, daysIndex);
+    })
+})
+
+previousDay.addEventListener('click', () => {
+    const data = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getWeather();
+    data.then(resolvedData => {
+        daysIndex = _Days__WEBPACK_IMPORTED_MODULE_5__["default"].previousDay(resolvedData, daysIndex);
+    })
+})
+
+window.onload = onWindowLoad;
+
+function onWindowLoad(){
+    const gifData = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getGif();
+    gifData.then(result => {
+        gif.src = result.data[0].images.original.url;
+        gif.style = 'width: 400px; height: 500px;'
+    })
+    const data = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getWeather();
+    data.then(resolvedData => {
+        const days = resolvedData.forecast.forecastday;
+        const date = new Date(days[daysIndex].date);
+        const dateArray = date.toString().split(' ');
+        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')
+        
+        _current__WEBPACK_IMPORTED_MODULE_3__["default"].displayCurrentCelciusData(resolvedData);
+        _daily__WEBPACK_IMPORTED_MODULE_2__["default"].getCelciusDay(resolvedData, daysIndex);
+        _hourly__WEBPACK_IMPORTED_MODULE_4__["default"].loadHourlyCelciusData(resolvedData, daysIndex);
+    })
+}
+
+celcius.addEventListener('click', () => {
+    const gifData = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getGif(city);
+    gifData.then(result => {
+        gif.src = result.data[0].images.original.url;
+        gif.style = 'width: 400px; height: 500px;'
+    })
+    const data = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getWeather(city);
+    data.then(resolvedData => {
+        hourlyData.textContent = '';
+        const days = resolvedData.forecast.forecastday;
+        const date = new Date(days[daysIndex].date);
+        const dateArray = date.toString().split(' ');
+        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')
+        
+        _current__WEBPACK_IMPORTED_MODULE_3__["default"].displayCurrentCelciusData(resolvedData);
+        _daily__WEBPACK_IMPORTED_MODULE_2__["default"].getCelciusDay(resolvedData, daysIndex);
+        _hourly__WEBPACK_IMPORTED_MODULE_4__["default"].loadHourlyCelciusData(resolvedData, daysIndex);
+    })
+})
+
+fahrenheiht.addEventListener('click', () => {
+    const gifData = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getGif(city);
+    gifData.then(result => {
+        gif.src = result.data[0].images.original.url;
+        gif.style = 'width: 400px; height: 500px;'
+    })
+    const data = _api__WEBPACK_IMPORTED_MODULE_1__["default"].getWeather(city);
+    data.then(resolvedData => {
+        hourlyData.textContent = '';
+        const days = resolvedData.forecast.forecastday;
+        const date = new Date(days[daysIndex].date);
+        const dateArray = date.toString().split(' ');
+        hourlyDate.textContent = [dateArray[1], dateArray[2], dateArray[3]].join('-')
+        
+        _current__WEBPACK_IMPORTED_MODULE_3__["default"].displayCurrentFahrenheihtData(resolvedData);
+        _daily__WEBPACK_IMPORTED_MODULE_2__["default"].getFahrenheihtDay(resolvedData, daysIndex);
+        _hourly__WEBPACK_IMPORTED_MODULE_4__["default"].loadHourlyFahrenheihtData(resolvedData, daysIndex);
+    })
+})
+})();
+
 /******/ })()
 ;
